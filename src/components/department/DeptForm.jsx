@@ -87,7 +87,7 @@ export default function DeptForm({ editingDept, onSubmit, onCancel }) {
                         <input
                             type="text"
                             value={name}
-                            onChange={e => setName(e.target.value)}
+                            onChange={e => setName(e.target.value)} // 입력값이 바뀔 때마다 name state 업데이트
                             placeholder="예: HR"
                             required
                             className={inputClass}
@@ -102,7 +102,7 @@ export default function DeptForm({ editingDept, onSubmit, onCancel }) {
                         <input
                             type="text"
                             value={desc}
-                            onChange={e => setDesc(e.target.value)}
+                            onChange={e => setDesc(e.target.value)} // 입력값이 바뀔 때마다 desc state 업데이트
                             placeholder="부서에 대한 설명을 입력하세요"
                             required
                             className={inputClass}
